@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title{
+  flex-direction: column;
+  line-height: 10px;
+}
+
+li{
+  display: inline-block;
+  margin: 20px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+a:hover{
+  color: rgb(132, 14, 201);
+}
+
+#ins-btn{
+  border: 2px solid rgb(132, 14, 201);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#ins-btn:hover{
+  color: white;
+  background-color: rgb(132, 14, 201);
+}
+
+h1{
+  font-weight: 200;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h2{
+  font-size: 56px;
+  line-height: 10px;
+  font-family: 'Poppinsmedium' sans-serif;
+}
+
+span{
+  color: rgb(132, 13, 201);
+}
+
+p{
+  line-height: 20px;
+  max-width: 500px;
+  font-family: 'Poppinslight';
+}
+
+img{
+  width: 580px;
+  border-radius: 60% 10%;
+  object-fit: cover;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+form [type="submit"]{
+  width: 50%;
+  height: 50px;
+  background-color: rgb(132, 13, 201);
+  color: white;
+  font-weight: bold;
+}
+form [type="submit"]:hover{
+  cursor: pointer;
+}
+
+input{
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
