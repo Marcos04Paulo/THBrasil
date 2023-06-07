@@ -16,9 +16,10 @@ header{
   align-items: center;
 }
 
-#title{
-  flex-direction: column;
-  line-height: 10px;
+.logo{
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 li{
@@ -59,9 +60,10 @@ main{
 }
 
 h2{
-  font-size: 56px;
-  line-height: 10px;
+  font-size: 36px;
+  line-height: 38px;
   font-family: 'Poppinsmedium' sans-serif;
+  max-width: 30ch;
 }
 
 span{
@@ -69,12 +71,13 @@ span{
 }
 
 p{
-  line-height: 20px;
+  font-size: 22px;
+  line-height: 25px;
   max-width: 500px;
   font-family: 'Poppinslight';
 }
 
-img{
+article img{
   width: 580px;
   border-radius: 60% 10%;
   object-fit: cover;
