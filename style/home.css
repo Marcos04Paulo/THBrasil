@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 body{
-  background-color: rgb(34, 34, 34);
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   max-width: 1200px;
   margin: 0 auto;
@@ -14,6 +14,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
 }
 
 .logo{
@@ -22,31 +23,36 @@ header{
   border-radius: 20px;
 }
 
+ul{
+  display: flex;
+  gap: 10px;
+}
+
 li{
   display: inline-block;
-  margin: 20px;
+  padding: 8px 15px;
 }
 
 a{
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: all .5s;
 }
 
 a:hover{
-  color: rgb(132, 14, 201);
+  color: #0ef;
 }
 
-#ins-btn{
-  border: 2px solid rgb(132, 14, 201);
+/* #ins-btn{
+  border: 2px solid #0ef;
   border-radius: 15px;
   padding: 10px;
 }
 
 #ins-btn:hover{
-  color: white;
-  background-color: rgb(132, 14, 201);
-}
+  color: #fff;
+  background-color: #0ef;
+} */
 
 h1{
   font-weight: 200;
@@ -56,34 +62,68 @@ main{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 50px;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  border: 1px solid red;
 }
 
 h2{
-  font-size: 36px;
+  font-size: 34px;
   line-height: 38px;
   font-family: 'Poppinsmedium' sans-serif;
   max-width: 30ch;
 }
 
 span{
-  color: rgb(132, 13, 201);
+  color: #0ef;
 }
 
 p{
-  font-size: 22px;
+  font-size: 18px;
   line-height: 25px;
-  max-width: 500px;
+  max-width: 600px;
   font-family: 'Poppinslight';
+  margin-bottom: 25px;
 }
 
 article img{
-  width: 580px;
-  border-radius: 60% 10%;
-  object-fit: cover;
+  width: 400px;
+  border-radius: 50% 10%;
+  box-shadow: 0 0px 20px 0 #0ef;
 }
 
-form{
+article .img-home{
+	animation: floatImageY 3s ease-in-out infinite;
+}
+
+@keyframes floatImageY {
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-2.4rem);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.contact-us{
+  padding: 10px;
+  border: 1px solid #0ef;
+  border-radius: 20px;
+  color: #0ef;
+  box-shadow: 0 0 10px 0 #0ef;
+}
+
+.contact-us:hover{
+  background-color: #0ef;
+  color: #eee;
+  box-shadow: 0 0 10px 0 #eee;
+  border: 1px solid transparent;
+}
+
+/* form{
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -108,4 +148,4 @@ input{
   border: none;
   font-size: 15px;
   outline: none;
-}
+}*/

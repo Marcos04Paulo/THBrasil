@@ -1,0 +1,35 @@
+.title{
+  text-align: center;
+  font-size: 44px;
+  text-shadow: 3px 3px 10px rgb(21, 82, 87);
+}
+
+.main-about{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aside-about{
+  border: 1px solid blue;
+  width: 50%;
+}
+
+.img-about{
+  border-radius: 50%;
+}
+
+article .img-about{
+	animation: floatImage 3s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(-2.4rem);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
